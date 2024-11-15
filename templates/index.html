@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roll Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🎲 Dice Roll Simulator 🎲</h1>
+        
+        {% if dice_value %}
+            <div class="dice-result">
+                <p>You rolled a:</p>
+                <span class="dice-number">{{ dice_value }}</span>
+            </div>
+        {% endif %}
+        
+        <a href="{{ url_for('roll_dice') }}" class="roll-button">Roll the Dice</a>
+    </div>
+</body>
+</html>
