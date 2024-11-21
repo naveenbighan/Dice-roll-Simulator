@@ -10,3 +10,8 @@ Overview
   # How It Works
    1.  A random number is generated between 1 and 6.
    2.The number is displayed to the user.
+
+# Future Enhancements
+ 1.Add animations for dice rolling.
+ 2. Allow simulation of multiple dice rolls.
+ 3.Extend functionality to simulate dice with more than six faces.
